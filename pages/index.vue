@@ -107,7 +107,7 @@
 }
 
 .short-cut .screen-button {
-  font-size: 0.7em !important;
+  font-size: 0.6em !important;
 }
 
 .main {

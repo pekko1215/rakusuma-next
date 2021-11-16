@@ -64,8 +64,8 @@ export default {
   },
 
   manifest: {
-    name: "RakuSumaNext",
-    short_name: "RakuSumaNext",
+    name: "ラクスマねくすと",
+    short_name: "ラクスマねくすと",
     display: "fullscreen",
     start_url: "/rakusuma-next/",
     lang: 'ja'

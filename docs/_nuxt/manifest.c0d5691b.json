@@ -47,7 +47,7 @@
     }
   ],
   "start_url": "/rakusuma-next/?standalone=true",
-  "display": "browser",
+  "display": "fullscreen",
   "background_color": "#ffffff",
   "lang": "ja"
 }

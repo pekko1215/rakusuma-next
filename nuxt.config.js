@@ -43,6 +43,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -61,4 +62,12 @@ export default {
   generate: {
     dir: 'docs'
   },
+
+  manifest: {
+    name: "RakuSumaNext",
+    short_name: "RakuSumaNext",
+    start_url: "./index.html",
+    display: "fullscreen",
+    lang: 'ja'
+  }
 }

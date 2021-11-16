@@ -67,6 +67,7 @@ export default {
     name: "RakuSumaNext",
     short_name: "RakuSumaNext",
     display: "fullscreen",
+    start_url: "/rakusuma-next/",
     lang: 'ja'
   }
 }

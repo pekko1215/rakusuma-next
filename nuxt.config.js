@@ -66,7 +66,6 @@ export default {
   manifest: {
     name: "RakuSumaNext",
     short_name: "RakuSumaNext",
-    start_url: "./index.html",
     display: "fullscreen",
     lang: 'ja'
   }

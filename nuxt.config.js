@@ -66,6 +66,7 @@ export default {
   manifest: {
     name: "RakuSumaNext",
     short_name: "RakuSumaNext",
+    display: "browser",
     lang: 'ja'
   }
 }

@@ -40,6 +40,7 @@
         icon-color="#00acee"
         text="ツイッター"
         icon="mdi-twitter"
+        href="https://twitter.com/"
       />
       <screen-button
         class="app-2"
@@ -47,6 +48,7 @@
         :icon-size="serviceIconSize"
         text="ディスコード"
         icon="mdi-discord"
+        href="discord://"
       />
       <screen-button
         class="app-3"
@@ -54,6 +56,7 @@
         :icon-size="serviceIconSize"
         text="ユーチューブ"
         icon="mdi-youtube"
+        href="https://www.youtube.com/"
       />
       <screen-button
         class="app-4"
@@ -61,15 +64,13 @@
         :icon-size="serviceIconSize"
         text="スポティファイ"
         icon="mdi-spotify"
+        href="spotify:"
       />
     </div>
     <div class="search-area">
-      <v-text-field solo rounded>
+      <v-text-field solo rounded v-model="searchText" @keyup.enter="downEnter">
         <template #prepend-inner>
           <v-icon>mdi-google</v-icon>
-        </template>
-        <template #append>
-          <v-icon>mdi-microphone</v-icon>
         </template>
       </v-text-field>
     </div>
@@ -165,5 +166,12 @@ import { Vue, Component, Prop } from "nuxt-property-decorator";
 export default class IndexPage extends Vue {
   smallIconSize = 60;
   serviceIconSize = 56;
+
+  searchText = "";
+
+  downEnter() {
+    location.href =
+      `https://www.google.com/search?q=` + encodeURIComponent(this.searchText);
+  }
 }
 </script>

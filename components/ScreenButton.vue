@@ -52,6 +52,7 @@ export default class DefaultLayout extends Vue {
   font-weight: bold;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .button-wrap {
